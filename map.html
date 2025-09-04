@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/imagemapster/1.9.2/jquery.imagemapster.min.js"></script>
+  </head>
+  <body>
+    <div>
+      <!-- <img src="imgs/workplace.jpg" usemap="#mymap" id="mapImg" /> -->
+      <img src="imgs/maharashtra.png" usemap="#mymap" />
+      <map name="mymap">
+        <area
+          shape="rect"
+          coords="44,51,265,341"
+          href="https://shorturl.at/HOmBk"
+          target="_blank"
+        />
+        <area
+          shape="circle"
+          coords="338,299,40"
+          href="https://en.wikipedia.org/wiki/Coffee"
+          target="_blank"
+        />
+        <area
+          shape="poly"
+          coords="193,377,149,438,183,482,251,487,303,495"
+          href="https://shorturl.at/4n60L"
+          target="_blank"
+        />
+      </map>
+    </div>
+    <script>
+      $(function () {
+        $("#mapImg").mapster({
+          fillColor: "ff0000",
+          fillOpacity: 0.6,
+          stroke: true,
+          strokeColor: "000000",
+          strokeWidth: 2,
+          singleSelect: true,
+          mapKey: "alt",
+          clickNavigate: true,
+        });
+      });
+    </script>
+  </body>
+</html>

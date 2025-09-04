@@ -131,10 +131,16 @@ rowspan
 colspan
 
 
-
-
 Image Mapping
 --------------------
+To create the clickable areas on image.
+To create image map in html we use two tags
+    a) map 
+    b) area 
+    
+
+
+
 
 
 Form Tags in html
