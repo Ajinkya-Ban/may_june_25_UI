@@ -139,9 +139,67 @@ To create image map in html we use two tags
     b) area 
     
 
-
-
-
-
 Form Tags in html
 ---------------------
+The form tag can be used for to collect the user data.
+In html we can use the form tag as below
+
+Example
+--------------
+<form>
+
+</form>
+
+The form tag has following attribute,
+a) action : page url or endpoint
+b) method: http method --> get, post, put, delete, patch
+c) enct-type : media --> images, video, audio, pdf, .txt, .docx --> form/data
+d) accept-charset --> utf-8
+e) name
+
+
+
+login.php 
+login.html
+
+login.ejs
+login.js 
+
+status code 200, 201,400, 401
+
+url : http://localhost:7878/login --> endpoint
+
+Form tags
+-----------------------------
+label : it will display static text
+input : 
+
+
+Form : Employee Registration
+------------------------------------
+Fields
+------------
+name
+age
+gender
+birthdate
+email
+mobile
+skills
+country
+city
+address
+upload photo
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      .box {
+        width: 80%;
+        min-height: 100px;
+        border: 2px solid lightgray;
+        margin: auto;
+      }
+      .box h1 {
+        text-align: center;
+        font-family: "Raleway", sans-serif;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      table,
+      tr,
+      td {
+        border: 1px solid lightgray;
+        padding: 5px;
+      }
+      .text-align1 {
+        text-align: center;
+      }
+      input[type="text"],
+      input[type="number"],
+      input[type="date"] {
+        width: 60%;
+        padding: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <h1>Employee Registration Form 🧑‍🦱</h1>
+      <div class="data">
+        <table>
+          <tr>
+            <td class="text-align1">
+              <label for="name">Enter FullName</label>
+            </td>
+            <td>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Enter name"
+                autocomplete="off"
+              />
+            </td>
+          </tr>
+
+          <tr>
+            <td class="text-align1">
+              <label for="age">Enter Age</label>
+            </td>
+            <td>
+              <input
+                type="number"
+                id="age"
+                name="age"
+                placeholder="Enter age"
+                autocomplete="off"
+              />
+            </td>
+          </tr>
+
+          <tr>
+            <td class="text-align1">
+              <label for="gender">Select Gender</label>
+            </td>
+            <td>
+              <input type="radio" id="male" name="gender" value="male" />Male
+              <input
+                type="radio"
+                id="female"
+                name="gender"
+                value="female"
+              />Female
+
+              <input type="radio" id="other" name="gender" value="other" />Other
+            </td>
+          </tr>
+
+          <tr>
+            <td class="text-align1">
+              <label for="gender">Select Birthdate</label>
+            </td>
+            <td>
+              <input type="date" />
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
