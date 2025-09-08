@@ -12,6 +12,11 @@
       rel="stylesheet"
     />
 
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+
     <style>
       .box {
         width: 80%;
@@ -38,9 +43,33 @@
       }
       input[type="text"],
       input[type="number"],
-      input[type="date"] {
+      input[type="date"],
+      input[type="email"] {
         width: 60%;
         padding: 5px;
+      }
+      select {
+        width: 62%;
+        padding: 5px;
+      }
+      .add {
+        width: 61%;
+      }
+      .submit {
+        width: 20%;
+        padding: 10px 0;
+        background-color: royalblue;
+        color: white;
+        border: none;
+        border-radius: 10px;
+      }
+      .clear {
+        width: 20%;
+        padding: 10px 0;
+        background-color: tomato;
+        color: white;
+        border: none;
+        border-radius: 10px;
       }
     </style>
   </head>
@@ -102,6 +131,128 @@
             </td>
             <td>
               <input type="date" />
+            </td>
+          </tr>
+
+          <tr>
+            <td class="text-align1">
+              <label for="email">Email Address</label>
+            </td>
+            <td>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Email Address"
+                autocomplete="off"
+              />
+            </td>
+          </tr>
+
+          <tr>
+            <td class="text-align1">
+              <label for="mob">Enter Mobile</label>
+            </td>
+            <td>
+              <input
+                type="number"
+                name="mob"
+                id="mob"
+                placeholder="Enter mobile number"
+                autocomplete="off"
+              />
+            </td>
+          </tr>
+
+          <tr>
+            <td class="text-align1">
+              <label for="skills">Select Skills</label>
+            </td>
+            <td>
+              <input type="checkbox" id="java" name="java" value="java" /><label
+                >Java</label
+              >
+
+              <input
+                type="checkbox"
+                id="python"
+                name="python"
+                value="python"
+              /><label>Python</label>
+
+              <input
+                type="checkbox"
+                id="react"
+                name="react"
+                value="react"
+              /><label>React</label>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="text-align1">
+              <label for="country">Select Country</label>
+            </td>
+            <td>
+              <select id="country" name="country">
+                <option value="select">Select</option>
+                <optgroup label="aisa">
+                  <option value="ind">India</option>
+                  <option value="china">China</option>
+                  <option value="Bhutan">Bhutan</option>
+                </optgroup>
+
+                <optgroup label="Europe">
+                  <option value="Russia">Russia</option>
+                  <option value="Germany">Germany</option>
+                </optgroup>
+              </select>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="text-align1">
+              <label for="city">Enter City</label>
+            </td>
+            <td>
+              <input
+                type="text"
+                name="city"
+                id="city"
+                placeholder="Enter city here"
+                autocomplete="off"
+              />
+            </td>
+          </tr>
+
+          <tr>
+            <td class="text-align1">
+              <label for="address">Enter Full Address</label>
+            </td>
+            <td>
+              <textarea class="add" rows="5" id="address" name="add">
+              </textarea>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="text-align1">
+              <label for="photo">Upload Photo</label>
+            </td>
+            <td>
+              <input type="file" accept="image/*" id="photo" />
+            </td>
+          </tr>
+
+          <tr>
+            <td></td>
+            <td>
+              <button class="submit">
+                <i class="fa-solid fa-user-plus fa-shake"></i> Submit
+              </button>
+              <button class="clear">
+                <i class="fa-solid fa-trash-can fa-shake"></i> Clear
+              </button>
             </td>
           </tr>
         </table>

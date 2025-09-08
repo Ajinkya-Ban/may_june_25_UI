@@ -172,7 +172,8 @@ url : http://localhost:7878/login --> endpoint
 Form tags
 -----------------------------
 label : it will display static text
-input : 
+input : on the basis of requirement we change the input type like, text, radio, email
+number, date
 
 
 Form : Employee Registration
@@ -186,11 +187,16 @@ birthdate
 email
 mobile
 skills
-country
+country --> dropdown box --> select tag --> options
 city
-address
+address --> textarea tag
 upload photo
 
+open file dialog box 
+save file dialog box
+font dialog box
+color dialog box 
+print dialog box 
 
 
 
