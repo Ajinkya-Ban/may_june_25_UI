@@ -199,4 +199,99 @@ color dialog box
 print dialog box 
 
 
+========================================================================================================================================================
+CSS Introduction
+====================================================
+What is css?
+----------------------------------
+CSS is nothing but it cascadeing stylesheet programming langauge.
+It was introduced in the year of 1995, by Hackon Lie.
+CSS3 is the combination of CSS + JS.
+The first of version of css is called as css level1 in the year of 1996.
+After the 2yr that is 1998, next version of css came in market and which was known as CSS Level2.
+After 10yrs that is 2008, latest css was introduced which was known as CSS3.
+
+
+Why we use the css?
+-------------------------------------------
+As we know, the element of html is ugly in nature.
+So, we change the nature of html element we use the css to make them very attractive as well as make the web app responsive in nature.
+
+What are the different types of css are present?
+----------------------------------------------------------
+As we know there are 3 types of css are present,
+a) inline css:
+--------------------------
+In this type of css we can write the property inside the html element by using the tag called as <style></style>.
+Note: Each element in html has the style.
+
+
+b) internal css:
+------------------------------
+In this type of css we can write the css property inside the html page, which is located in <head></head> section using the tag called <style></style>.
+
+
+c) external css:
+-------------------------------
+In this type css we can write the css property inside the external file which is located in our project root directory.
+When write css property inside the external file dont use the <style></style>.
+The external file has the extension called as .css 
+We link the external css with html page we use the tag called as <link></link>. Inside the link tag we pass some attribute rel means relation with stylesheet and than another attribute called as href which denote the location of css file.
+
+Example:
+------------------
+<link rel="stylesheet" href="./css/style.css" />
+
+The general syntax of css is as below,
+
+selectors{
+    key:value,
+    key:value
+}
+
+
+
+Q. What is mean by selectors in css and explain its types?
+----------------------------------------------------------------------------
+Def : Selectors is nothing but targetting element.
+
+Types of selectors:
+-----------------------------
+1. id selectors : It is indicated by # symbol. It is unique.
+2. class selector : It is indicated by using .(dot). We can apply multiple classes to single element.
+3. tag with class selector
+4. tag selector : We can directly target html element like h1, p, div, body, table, ul, li etc ....
+5. group selector :  We can create a group also like h1,h2 this one group than h5,h6 another group.
+6. universal selector : It is indicated by using * symbol.
+7. psudeo classes and psudeo elements
+
+
+psudeo elements:
+------------------------------
+1. ::After
+2. ::before
+3. ::selection
+4. ::first-line
+5. ::placeholder
+6. ::first-letter
+
+
+
+Q. How we can declare the variables in css?
+-------------------------------------------------------
+In css we can declare the variables using the global scope.
+In css the global scope declared by using psudeo class :root
+The variables are created using --variable_name.
+We can acees the variables using the function called as var().
+Example:
+--------------------
+var(--variable_name)
+
+
+Q. What is mean @import rule?
+---------------------------------------------
+If i have multiple css files and i want to add these files into a main css file than we can use
+@import rule.
+
+
 
