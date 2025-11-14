@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Judson:ital,wght@0,400;0,700;1,400&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Judson", serif;
+}
+.container {
+  width: 80%;
+  min-height: 100px;
+  margin: auto;
+  border: 2px solid lightgray;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.logo-nav-div {
+  width: 100%;
+  min-height: 60px;
+  background-color: black;
+}
+.logo-nav-div .logo {
+  width: 40%;
+  min-height: 60px;
+  float: left;
+}
+.logo h1 {
+  font-size: 2.6em;
+  font-weight: 900;
+  padding: 10px;
+  color: #ff9026;
+}
+.logo-nav-div .nav {
+  width: 58%;
+  min-height: 60px;
+  float: right;
+}
+.nav ul {
+  list-style-type: none;
+  width: 100%;
+}
+.nav ul li {
+  display: inline-block;
+  padding-top: 20px;
+}
+.nav ul li a {
+  text-decoration: none;
+  padding: 10px;
+  color: white;
+  font-size: 1.2em;
+}
+.nav ul li a:hover {
+  background-color: #ff9026;
+  color: white;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.slider {
+  width: 100%;
+  min-height: 200px;
+  border: 1px solid #000;
+  margin-top: 5px;
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+.bar-content-div {
+  width: 100%;
+  min-height: 300px;
+  /* background-color: gray; */
+  margin-top: 5px;
+}
+.bar-content-div .bar {
+  width: 20%;
+  min-height: 300px;
+  /* border: 1px solid #000; */
+  float: right;
+}
+.bar img {
+  width: 100%;
+  min-height: 300px;
+}
+.bar-content-div .cont {
+  width: 80%;
+  min-height: 300px;
+  /* border: 1px solid #000; */
+  float: left;
+}
+.cont .orange-parent {
+  width: 100%;
+  min-height: 200px;
+}
+
+.cont .orange-parent .red-parent {
+  width: 70%;
+  min-height: 200px;
+  /* border: 1px solid red; */
+  float: left;
+}
+.red-parent .que h2 {
+  padding: 10px;
+  font-size: 1.7em;
+  font-weight: 100;
+  color: #3f6ed8;
+}
+.red-parent .skills p {
+  padding: 10px;
+  text-align: justify;
+}
+.cont .orange-parent .green-parent {
+  width: 30%;
+  height: 200px;
+  /* border: 1px solid green; */
+  float: right;
+}
+.green-parent img {
+  width: 100%;
+}
+.poster {
+  width: 100%;
+  padding: 10px;
+}
+.poster img {
+  width: 100%;
+}
+.footer {
+  width: 100%;
+  height: 60px;
+  background-color: black;
+  margin-top: 5px;
+}
+.footer p {
+  color: #ff9026;
+  text-align: center;
+  line-height: 60px;
+  font-size: 1.2em;
+}

@@ -1,0 +1,17 @@
+CSS
+--------------
+Layouts --> without using flex and grid --> by using float
+float --> right, left 
+
+CSS 10 properties
+----------------------------
+1. width
+2. height/min-height
+3. padding
+4. margin
+5. font-size/font-family/font-weight 
+6. text-decoration
+7. border 
+8. background-color 
+9. display --> inline / inline-block 
+10.float --> right / left 
