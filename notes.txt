@@ -15,3 +15,69 @@ CSS 10 properties
 8. background-color 
 9. display --> inline / inline-block 
 10.float --> right / left 
+============================================================================================
+background
+---------------------
+1. background-color:
+--------------------------------------
+background-color has one drawback --> We can use only one color at time.
+But my requirement is i want to select multiple color at time.
+
+background-color --> hexadecimal, colorname, rgb, rgba
+
+
+2. background-image:
+-----------------------------------
+background-image has two important features
+1. you can use it for multiple colors --> Suppose i want to use multiple color than we can use one function in csss called as linear-gradient()
+
+Syntax
+-----------------
+background-image : linear-gradient(direction/degree, colors)
+
+direction --> to right, to left, to bottom, to top
+degree --> 35deg, 145deg
+colors --> we combine one or more color 
+
+
+
+2. you can use it for to add image as background 
+background-image : url(image-path)
+
+
+3. background-Position --> center, right, left, bottom, top
+
+4. background-size --> cover, contains or you can also pass values in percentage as well as in pixel format 
+
+5. background-repeat: default repeat, no-repeat, repeat-x, repeat-y
+
+6. background-attachment : scroll, fixed
+
+
+Position
+---------------------
+1. relative
+2. absolute
+3. sticky
+4. fixed
+5. static
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
