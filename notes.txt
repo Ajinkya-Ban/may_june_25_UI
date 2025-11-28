@@ -56,11 +56,35 @@ background-image : url(image-path)
 
 Position
 ---------------------
-1. relative
-2. absolute
+By default html element are static in nature. So we move static element by using pading and margin.
+
+But our requirement is that we dont use padding and margin and move the element, so for this we use Position properties in that we use some following properties
+
+1. relative : Jyala const thevyche 
+2. absolute : Jyla firvyache ahe tyala mahnych absolute.
 3. sticky
 4. fixed
 5. static
+
+And to move the element we use 
+a) right
+b) left 
+c) top 
+d) bottom 
+e) z-index 
+============================================================================
+Display:
+--------------------
+1. block 
+2. inline --> height and width cant apply, margin left and right will work
+3. inline-block --> height and width apply also margin and padding fully work.
+4. flex 
+5. grid 
+6. table
+7. list
+
+
+
 
 
 

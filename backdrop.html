@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background: url("https://picsum.photos/800/600") no-repeat center/cover;
+        height: 100vh;
+      }
+
+      .glass-card {
+        width: 300px;
+        padding: 20px;
+        margin: 100px auto;
+        background: rgba(255, 255, 255, 0.2); /* transparent background */
+        backdrop-filter: blur(10px); /* blur effect */
+        border-radius: 15px;
+        color: white;
+      }
+      .box {
+        /* width: 250px;
+        height: 150px;
+        background: rgba(0, 0, 0, 0.3);
+        color: #fff;
+        padding: 20px;
+        backdrop-filter: blur(1px) brightness(60%); */
+        width: 300px;
+        height: 200px;
+        background: rgba(255, 255, 255, 0.2);
+        backdrop-filter: grayscale(100%);
+      }
+      .glass-btn {
+        padding: 12px 30px;
+        background: rgba(255, 255, 255, 0.15);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        border-radius: 10px;
+        backdrop-filter: blur(10px);
+        color: white;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <div class="glass-card">
+      <h2>Login</h2>
+      <p>This is a glass effect using backdrop-filter.</p>
+    </div> -->
+    <div class="box"></div>
+    <button class="glass-btn">Click Me</button>
+  </body>
+</html>

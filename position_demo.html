@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      .outer-box {
+        width: 500px;
+        height: 300px;
+        border: 1px solid #000;
+        margin: auto;
+        position: relative;
+      }
+      .outer-box img {
+        width: 100%;
+        height: 300px;
+      }
+      .jerry {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: -1;
+      }
+      .jerry img {
+        width: 100px;
+        height: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="outer-box">
+      <img src="imgs/grass.png" />
+      <div class="jerry">
+        <img src="./imgs/jerry.png" />
+      </div>
+    </div>
+  </body>
+</html>
