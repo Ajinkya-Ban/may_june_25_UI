@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      .box {
+        width: 80%;
+        min-height: 300px;
+        margin: auto;
+        border: 1px solid #000;
+        position: relative;
+      }
+      .box img {
+        width: 100%;
+      }
+      .inner-box {
+        width: 400px;
+        height: 300px;
+        /* border: 1px solid white; */
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(2px);
+      }
+      .inner-box h1 {
+        position: absolute;
+        text-align: center;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 2.6em;
+        color: #333;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <img src="./imgs/road.jpeg" />
+      <div class="inner-box">
+        <h1>Money is important than absolute</h1>
+      </div>
+    </div>
+  </body>
+</html>

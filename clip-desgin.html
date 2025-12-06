@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* HTML: <div class="ribbon">Your text content</div> */
+      /* HTML: <div class="ribbon">Your text content</div> */
+      .ribbon {
+        font-size: 20px;
+        font-weight: bold;
+        color: #fff;
+      }
+      .ribbon {
+        --f: 0.5em; /* control the folded part*/
+        --r: 1.8em; /* control the ribbon shape */
+
+        position: absolute;
+        left: 20px;
+        top: calc(-1 * var(--f));
+        padding: 0.2em;
+        background: #bf4d28;
+        border-left: var(--f) solid #0005;
+        border-bottom: var(--r) solid #0000;
+        clip-path: polygon(
+          var(--f) 0,
+          100% 0,
+          100% calc(100% - var(--r)),
+          calc(50% + var(--f) / 2) 100%,
+          var(--f) calc(100% - var(--r)),
+          var(--f) var(--f),
+          0 var(--f)
+        );
+      }
+      .container {
+        width: 80%;
+        min-height: 200px;
+        border: 1px solid #000;
+        margin: auto;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 10px;
+      }
+      .box {
+        width: 300px;
+        height: 200px;
+        background-color: lightgoldenrodyellow;
+        position: relative;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <div class="ribbon">Tv</div>
+      </div>
+      <div class="box">
+        <div class="ribbon">Radio</div>
+      </div>
+      <div class="box">
+        <div class="ribbon">Mobile</div>
+      </div>
+    </div>
+  </body>
+</html>
