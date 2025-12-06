@@ -1,0 +1,8 @@
+.box {
+  width: 80%;
+  min-height: 100px;
+  border: 1px solid lightgray;
+  margin: auto;
+  padding: 10px;
+  text-align: justify;
+}

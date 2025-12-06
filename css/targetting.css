@@ -1,0 +1,49 @@
+@import "second.css";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --textAlign: center;
+  --marginBottom: 10px;
+}
+
+#heading h1 {
+  text-align: var(--textAlign);
+}
+h3,
+h4 {
+  color: red;
+  text-align: var(--textAlign);
+  margin-bottom: var(--marginBottom);
+}
+.text p {
+  font-size: 18px;
+}
+.text-size {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+/* .text p::before {
+  content: "hello";
+  background-color: crimson;
+  display: block;
+} */
+.text p::after {
+  content: "CSS";
+  background-color: green;
+  color: white;
+  display: block;
+}
+.text p::selection {
+  background-color: lightseagreen;
+  color: white;
+}
+.text p::first-line {
+  background-color: yellow;
+}
+.text p::first-letter {
+  font-size: 44px;
+}
