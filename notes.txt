@@ -144,18 +144,173 @@ brightness
 garyscale
 invert
 
-
-
 SPA(Single Page Application):
 --------------------------------------
-
-
-
-
-
 display 
 -------------------
 display: block, inline, inline-block, flex, grid, list, table
+
+What is the difference between inline and inline-block?
+----------------------------------------------------------------------
+inline : 
+---------------
+width --> issue
+height --> issue
+padding 
+margin
+
+inline-block
+-----------------------
+width
+height
+margin
+padding
+
+
+display:flex 
+--------------------------------
+1. flex is tool that can be used for to make the divs/section flexible.
+2. flex can be work on only one direction at a time, either in row direction or in column direction.
+3. by using flex we avoid float property.
+4. For learning the flex we know some properties of flex.
+two wrods
+-----------------------
+parent --> flex container
+child ---> flex items
+
+
+1. display: flex --> By default all the divs switched in single row.
+2. flex-direction --> by default row, column,row-reverse, column-reverse
+3. justify-content --> This property will work in horizantal direction 
+                        a) flex-start
+                        b) flex-end
+                        c) center
+                        d) space-between
+                        e) space-around
+                        f) space-evenly
+4. align-items --> This properties will work in vertical direction.
+                        a)flex-start
+                        b) flex-end
+                        c) center
+                        d) stretch --> by default 
+                    
+5. flex-wrap --> by default no-wrap, wrap, wrap-reverse
+6. align-content : align-content property will work on multiple rows, while align-items will work in sinle row. 
+The following are some properties of align-content.
+                        a) flex-start
+                        b) flex-end
+                        c) center
+                        d) space-between
+                        e) space-around
+                        f) space-evenly
+
+7. order : 
+---------------------------
+We can change the position or placement of div. 
+In order properties we use either negative value or positive value.
+
+
+8. flex-basis:
+-----------------------------
+This property can be usd for to adjust the width of child. 
+9. flex-grow
+10. align-self
+11. flex-shrink
+===============================================================================================
+
+display : grid
+------------------------------------------
+1. flex has one drawback that is it works on only one direction at a time.
+2. to solve this we use the grid system. Means display:grid can work on both direction.
+3. By using grid system we work at row direction indirectly we increase height as well as we work on column direction indirectly increase the width.
+4. For learning the grid we know some properties of grid system.
+5. basically we can use the grid system to create image gallery, to create a admin dashboard
+
+
+The grid system divide as below.
+1. Basic grid properties:
+----------------------------------
+In the basic grid properties below some properties are listed to desgin the page.
+1. display:grid 
+2. grid-template-columns
+3. grid-template-rows
+4. grid-column-gap
+5. grid-row-gap
+6. gap 
+
+
+
+2. Placement of grid items/ change the position of grid items
+---------------------------------------------------------------
+To change the placement of the grid we know the grid number system. below are some properties
+1. grid-row-start
+2. grid-row-end 
+3. grid-column-start
+4. grid-column-end
+5. grid-row 
+6. grid-column 
+7. grid-area: grid-row-start / column-start / row-end / column-end
+
+
+
+3. Spanning of the grid / merging of grid items
+---------------------------------------------------------
+To merge row and column we use the following property,
+1. grid-row-start
+2. grid-row-end 
+3. grid-column-start
+4. grid-column-end
+5. grid-row 
+6. grid-column 
+7. grid-area: grid-row-start / column-start / row-end / column-end
+
+
+Explicit Grid Row
+Implicit Grid Row 
+
+
+4. Grid Item align:
+    a) align-items
+    b) justify-items
+    c) place-items
+    d) align-self 
+    e) justify-self 
+    f) place-self
+
+5. Grid Tracking:
+    a) align-content
+    b) justify-content
+    c) place-content
+
+    
+6. max-content, min-content and minmax()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
