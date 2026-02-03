@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      body {
+        height: 90vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .box {
+        width: 100px;
+        height: 100px;
+        background-color: black;
+        margin: auto;
+        animation-name: changeColor;
+        animation-duration: 5s;
+        animation-timing-function: linear;
+        /* animation-delay: 20s; */
+        animation-iteration-count: infinite;
+      }
+      /* @keyframes changeColor {
+        from {
+          background-color: black;
+        }
+        to {
+          background-color: orange;
+        }
+      } */
+      @keyframes changeColor {
+        0% {
+          background-color: orange;
+          border-radius: 10%;
+        }
+        25% {
+          background-color: green;
+          border-radius: 20%;
+        }
+
+        50% {
+          background-color: black;
+          border-radius: 30%;
+        }
+        75% {
+          background-color: crimson;
+          border-radius: 40%;
+        }
+        100% {
+          background-color: peru;
+          border-radius: 50%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+  </body>
+</html>
